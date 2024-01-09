@@ -14,12 +14,14 @@
 //P: Create a function with 2 parameters which are booleans
 //evaluate if they are both the same which would return false
 // if both are different and there are only 2 options we can assume one is true and one is false, so it returns true
-function xor(a, b) {
-  if (a === b) {
-    return false;
-  }
-  return true;
-}
+// function xor(a, b) {
+//   if (a === b) {
+//     return false;
+//   }
+//   return true;
+// }
+
+const xor = (a, b) => a !== b;
 
 console.log(xor(true, true));
 console.log(xor(true, false));
