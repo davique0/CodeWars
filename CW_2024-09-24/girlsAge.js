@@ -9,9 +9,11 @@
 //if we are given "2 years old" we should return 2
 //P:
 //Make a function that takes a string in the form of "x years old" where x is an integer but it is inside a string, so it is a string
-function girlAge(string) {
-  return Number(string[0]);
+function girlAge(str) {
+  if (!str) return "no string added";
+  return Number(str[0]);
 }
 //the return should be the number in the string as an integer
 girlAge("7 years old");
 console.log(girlAge("6 years old"), 6);
+console.log(girlAge());
