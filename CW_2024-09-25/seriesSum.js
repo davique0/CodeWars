@@ -21,15 +21,23 @@
 //E: Would the number be negative?
 //P: Create a function with a natural number as an parameter, this number (n) will determined how many of the series should be added to return the summ of all series
 
+// function seriesSum(n) {
+//   if (n === 0) return 0;
+//   let total = 1;
+
+//   for (let i = 0; i < n - 1; i++) {
+//     total = total + 1 / (4 + 3 * i);
+//   }
+
+//   return Number(total.toFixed(2));
+// }
+
 function seriesSum(n) {
-  if (n === 0) return 0;
-  let total = 1;
-
-  for (let i = 0; i < n - 1; i++) {
-    total = total + 1 / (4 + 3 * i);
+  let total = 0;
+  for (let i = 0; i < n; i++) {
+    total += 1 / (1 + i * 3);
   }
-
-  return Number(total.toFixed(2));
+  return total.toFixed(2);
 }
 
 console.log(seriesSum(2));
